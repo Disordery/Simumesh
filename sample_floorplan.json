@@ -1,0 +1,29 @@
+{
+  "dimensions": {"width_m": 24.0, "height_m": 16.0, "resolution_m": 0.15},
+  "walls": [
+    {"x1": 0.0, "y1": 0.0, "x2": 24.0, "y2": 0.0, "material": "concrete", "thickness_m": 0.25},
+    {"x1": 24.0, "y1": 0.0, "x2": 24.0, "y2": 16.0, "material": "concrete", "thickness_m": 0.25},
+    {"x1": 24.0, "y1": 16.0, "x2": 0.0, "y2": 16.0, "material": "concrete", "thickness_m": 0.25},
+    {"x1": 0.0, "y1": 16.0, "x2": 0.0, "y2": 0.0, "material": "concrete", "thickness_m": 0.25},
+
+    {"x1": 8.0, "y1": 0.0, "x2": 8.0, "y2": 6.0, "material": "drywall", "thickness_m": 0.1},
+    {"x1": 8.0, "y1": 8.0, "x2": 8.0, "y2": 16.0, "material": "drywall", "thickness_m": 0.1},
+
+    {"x1": 16.0, "y1": 0.0, "x2": 16.0, "y2": 5.0, "material": "glass", "thickness_m": 0.02},
+    {"x1": 16.0, "y1": 7.0, "x2": 16.0, "y2": 16.0, "material": "drywall", "thickness_m": 0.1},
+
+    {"x1": 0.0, "y1": 10.0, "x2": 6.0, "y2": 10.0, "material": "brick", "thickness_m": 0.15},
+
+    {"x1": 18.5, "y1": 9.0, "x2": 24.0, "y2": 9.0, "material": "metal", "thickness_m": 0.1}
+  ],
+  "access_points": [
+    {"id": "gateway_lobby", "x": 3.0, "y": 3.0, "tx_power_dbm": 23, "band_ghz": 5.0, "channel": 36,
+     "is_gateway": true, "dedicated_backhaul": true, "antenna_gain_dbi": 3.0},
+    {"id": "mesh_conference", "x": 20.0, "y": 3.0, "tx_power_dbm": 20, "band_ghz": 5.0, "channel": 44,
+     "dedicated_backhaul": true, "antenna_gain_dbi": 2.0},
+    {"id": "mesh_openplan", "x": 12.0, "y": 12.0, "tx_power_dbm": 20, "band_ghz": 5.0, "channel": 149,
+     "dedicated_backhaul": false, "antenna_gain_dbi": 2.0},
+    {"id": "mesh_farcorner", "x": 21.5, "y": 13.0, "tx_power_dbm": 18, "band_ghz": 5.0, "channel": 40,
+     "dedicated_backhaul": false, "antenna_gain_dbi": 2.0}
+  ]
+}

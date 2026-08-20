@@ -1,0 +1,16 @@
+{
+  "target_rssi_dbm": -67.0,
+  "coverage_percent": 100.0,
+  "mean_rssi_dbm": -34.10198661952187,
+  "aps": [
+    "gateway_lobby",
+    "mesh_conference",
+    "mesh_openplan",
+    "mesh_farcorner"
+  ],
+  "grid_shape": [
+    108,
+    161
+  ],
+  "resolution_m": 0.15
+}

@@ -1,0 +1,13 @@
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+
+# Optional: JIT-compiles the ray/wall intersection kernel for a large speedup
+# on dense wall layouts and high ray counts. Falls back to pure numpy/Python
+# automatically if not installed.
+numba>=0.58
+
+# cad_editor.py uses tkinter (Python standard library). On Debian/Ubuntu it
+# ships as a separate OS package if missing:
+#   sudo apt-get install python3-tk
+# tkinter is already bundled with the official Windows/macOS Python installers.

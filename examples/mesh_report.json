@@ -1,0 +1,61 @@
+{
+  "gateway": "gateway_lobby",
+  "routes": {
+    "mesh_conference": [
+      "gateway_lobby",
+      "mesh_conference"
+    ],
+    "mesh_openplan": [
+      "gateway_lobby",
+      "mesh_openplan"
+    ],
+    "mesh_farcorner": [
+      "gateway_lobby",
+      "mesh_openplan",
+      "mesh_farcorner"
+    ]
+  },
+  "throughput": {
+    "mesh_conference": {
+      "hops": 1,
+      "path": [
+        "gateway_lobby",
+        "mesh_conference"
+      ],
+      "bottleneck_phy_mbps": 681.1,
+      "effective_throughput_mbps": 681.1,
+      "reachable": true
+    },
+    "mesh_openplan": {
+      "hops": 1,
+      "path": [
+        "gateway_lobby",
+        "mesh_openplan"
+      ],
+      "bottleneck_phy_mbps": 908.2,
+      "effective_throughput_mbps": 908.2,
+      "reachable": true
+    },
+    "mesh_farcorner": {
+      "hops": 2,
+      "path": [
+        "gateway_lobby",
+        "mesh_openplan",
+        "mesh_farcorner"
+      ],
+      "bottleneck_phy_mbps": 908.2,
+      "effective_throughput_mbps": 454.1,
+      "reachable": true
+    }
+  },
+  "channel_allocation": {
+    "2.4ghz": {},
+    "5ghz": {
+      "gateway_lobby": 36,
+      "mesh_openplan": 40,
+      "mesh_conference": 44,
+      "mesh_farcorner": 44
+    },
+    "6ghz": {}
+  }
+}
